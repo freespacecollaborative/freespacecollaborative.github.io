@@ -1,0 +1,36 @@
+<footer id="site-footer" class="row">
+    <section class="footer-stuff">
+        <section id="recent-posts" class="three columns">
+            <h3>Recent articles</h3>
+            <ul>
+                {% for post in site.posts  limit:3 %}
+                <li>
+                    <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
+                    <p>{{post.short-summary}}</p>
+                </li>
+                
+                {% endfor %}
+            </ul>
+        </section>
+        <section id="find-us-on" class="three columns">
+            <h3>Find us on</h3>
+            <ul>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Behance</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </section>
+        <section id="newsletter" class="six columns">
+            <p><strong>Sign up for our newsletter </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nobis, perspiciatis dolore nesciunt </p>
+            <form class="row">
+                <div class="columns eight">
+                    <input class="u-full-width" type="email" placeholder="Your E-mail please">
+                </div>
+                <div class="columns four">
+                    <input class="button-primary" type="submit">
+                </div>
+            </form>
+        </section>
+    </section>
+</footer>

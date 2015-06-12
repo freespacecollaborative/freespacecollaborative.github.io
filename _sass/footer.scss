@@ -1,0 +1,41 @@
+#site-footer {
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    position: fixed; 
+    bottom: 0;
+    width: 100%; 
+    z-index: 1;  
+
+    a {
+        color: white;
+    }
+
+}
+
+.footer-stuff {
+    max-width: 80vw;
+    margin: 0 auto;
+
+    #recent-posts {
+        h3 {
+            margin-bottom: 2px;
+        }
+        ul {
+            list-style: none;
+        }
+        p {
+            margin-bottom: 0px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
+#find-us-on ul{
+	list-style: none; 
+}
+
+#newsletter{
+	padding-top: 20px;
+}

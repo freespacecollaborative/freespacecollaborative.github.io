@@ -1,0 +1,25 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+.the-bun{
+	width: 100vw; 
+	margin: 0 auto; 
+	z-index: 6; 
+	position: relative; 
+	background: white;
+	margin-bottom: 260px;
+	padding-bottom: 20px;
+}
+.the-meat{
+	width: 100vw; 
+	margin: 0 auto; 
+}
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "nav", 
+        "footer", 
+        "typo", 
+        "homepage"
+;
